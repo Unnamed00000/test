@@ -9,19 +9,29 @@
 <body>
   <div id="menu">
     <ul>
-      <li><a href="#" onclick="showContent('content1')">Пункт 1</a></li>
-      <li><a href="#" onclick="showContent('content2')">Пункт 2</a></li>
-      <!-- Добавьте другие пункты меню по аналогии -->
+      <li>
+        <a href="#" onclick="showContent('content1')">
+          <img src="image1.jpg" alt="Фото 1">
+          Пункт 1
+        </a>
+      </li>
+      <li>
+        <a href="#" onclick="showContent('content2')">
+          <img src="image2.jpg" alt="Фото 2">
+          Пункт 2
+        </a>
+      </li>
+      <!-- Добавьте другие пункты меню с изображениями по аналогии -->
     </ul>
   </div>
 
   <div id="content">
-    <div id="content1" class="content hidden">
+    <div id="content1" class="hidden">
       <h2>Информация для Пункта 1</h2>
       <!-- Ваш контент для Пункта 1 -->
     </div>
 
-    <div id="content2" class="content hidden">
+    <div id="content2" class="hidden">
       <h2>Информация для Пункта 2</h2>
       <!-- Ваш контент для Пункта 2 -->
     </div>
