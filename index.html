@@ -1,26 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevPanksis</title>
-    <link rel="stylesheet" Href="Styles.css">
-</head>
-<body>
-    
+function showContent(contentId) {
+  // Скрывает все блоки контента
+  var contents = document.querySelectorAll('.content');
+  contents.forEach(function(content) {
+    content.classList.add('hidden');
+  });
 
-<Div class="odin">    
-Hello Warld
-</Div>
-
-<div class="dva">
-<h1>Hello</h1>
-</div>
-
-<h2>Hello</h2>
-<h3>Hello</h3>
-<h4>Hello</h4>
-<h5>Hello</h5>
-
-</body>
-</html>
+  // Показывает выбранный блок контента
+  var selectedContent = document.getElementById(contentId);
+  selectedContent.classList.remove('hidden');
+}
