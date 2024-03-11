@@ -14,8 +14,19 @@ body {
 #content {
   flex: 1;
   padding: 20px;
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  margin-right: 20px;
 }
 
 .hidden {
   display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
