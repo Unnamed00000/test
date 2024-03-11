@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#menu {
+  width: 20%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+#content {
+  flex: 1;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
