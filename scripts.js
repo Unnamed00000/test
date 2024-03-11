@@ -1,11 +1,15 @@
+var currentContent = null; // Добавлено для хранения текущего блока контента
+
 function showContent(contentId) {
-  // Скрывает все блоки контента
-  var contents = document.querySelectorAll('.content');
-  contents.forEach(function(content) {
-    content.classList.add('hidden');
-  });
+  // Скрывает текущий блок контента, если он существует
+  if (currentContent !== null) {
+    currentContent.classList.add('hidden');
+  }
 
   // Показывает выбранный блок контента
   var selectedContent = document.getElementById(contentId);
   selectedContent.classList.remove('hidden');
+
+  // Обновляет текущий блок контента
+  currentContent = selectedContent;
 }
