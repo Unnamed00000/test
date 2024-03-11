@@ -1,4 +1,4 @@
-var currentContent = null; // Добавлено для хранения текущего блока контента
+var currentContent = null;
 
 function showContent(contentId) {
   // Скрывает текущий блок контента, если он существует
