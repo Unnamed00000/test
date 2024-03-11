@@ -1,11 +1,33 @@
-function showContent(contentId) {
-  // Скрывает все блоки контента
-  var contents = document.querySelectorAll('.content');
-  contents.forEach(function(content) {
-    content.classList.add('hidden');
-  });
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ваша страница со ссылками</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="menu">
+    <ul>
+      <li><a href="#" onclick="showContent('content1')">Пункт 1</a></li>
+      <li><a href="#" onclick="showContent('content2')">Пункт 2</a></li>
+      <!-- Добавьте другие пункты меню по аналогии -->
+    </ul>
+  </div>
 
-  // Показывает выбранный блок контента
-  var selectedContent = document.getElementById(contentId);
-  selectedContent.classList.remove('hidden');
-}
+  <div id="content">
+    <div id="content1" class="hidden">
+      <h2>Информация для Пункта 1</h2>
+      <!-- Ваш контент для Пункта 1 -->
+    </div>
+
+    <div id="content2" class="hidden">
+      <h2>Информация для Пункта 2</h2>
+      <!-- Ваш контент для Пункта 2 -->
+    </div>
+    <!-- Добавьте другие блоки контента по аналогии -->
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
